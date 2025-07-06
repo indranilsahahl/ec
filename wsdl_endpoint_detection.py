@@ -50,4 +50,7 @@ def scan_wsdl(base_url, timeout=5):
             print(f"  -> {url}")
 
 if __name__ == "__main__":
-    target = input("Enter base URL (e.g., https://examp
+    target = input("Enter base URL (e.g., https://example.com): ").strip()
+    if not target.startswith("http"):
+        target = "http://" + target
+    scan_wsdl(target)
