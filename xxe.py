@@ -1,6 +1,6 @@
 import requests
 
-TARGET_URL = 'http://target-ip-or-host/dvwsuserservice/'  # Change this
+TARGET_URL = 'http://192.168.0.19:8080/dvwsuserservice/'  # Change this
 HEADERS = {
     'Content-Type': 'application/xml',
     'User-Agent': 'Mozilla/5.0'
